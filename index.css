@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;500&display=swap');
 
 body {
-    background-color: #12131f;
+    background-color: #18121f;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,7 +9,7 @@ body {
 
 .headerBar {
     width: 50%;
-    height: 100px;
+    height: 80px;
     display: flex;
     flex-direction: row;
 }
@@ -30,6 +30,7 @@ body {
 
 .iconImage {
     height: 100%;
+    transform: rotate(35deg);
 }
 
 .headerButton {
@@ -62,3 +63,37 @@ body {
     .headerText:hover + .headerButtonUnderline {
         width: 70%;
     }
+
+    .headerText:hover {
+        transform: rotate(10deg)
+    }
+
+.weAre {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+    margin-bottom: 1%;
+}
+
+.weAreText {
+    color: aliceblue;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+#name {
+    font-size: 3vw;
+}
+
+#team {
+    font-size: 1.3vw;
+}
+
+.biggImage {
+    width: 65%;
+    height: 350px;
+    object-fit: cover;
+}
