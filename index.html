@@ -1,6 +1,7 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/navbar.css">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
     </head>
     <body>
         <div class="headerBar">
@@ -13,7 +14,7 @@
                     <div class="headerButtonUnderline"></div>
                 </div>
                 <div class="headerButton">
-                    <a class="headerText" href="#" style="font-size: 1.1vw;">Who are we?</a>
+                    <a class="headerText" href="#" style="font-size: 0.95vw;">Who are we?</a>
                     <div class="headerButtonUnderline"></div>
                 </div>
                 <div class="headerButton">
@@ -35,17 +36,28 @@
             <div class="leftBox">
                 <a class="leftBoxTitle">Who are we?</a>
                 <a class="leftBoxDesc">We are The Stupid Six.
-                    A group of 6 friends from college that play Splatoon 3 competivly.
+                    A group of 6 friends from college that play Splatoon 3 competitively.
                     We first all met when we started our first year of colle...
                 </a>
                 <div class="readMoreArea">
                     <div class="readMoreButton" id="readMoreButt">
-                        <a class="readMoreText" href="#" onmouseover="buttonHover()">Read More</a>
+                        <a class="readMoreText" href="#" onmouseover="buttonHover()" onmouseout="buttonUnhover()">Read More</a>
                     </div>
                 </div>
             </div>
-            <div class="rightBox"></div>
+            <div class="rightBox">
+                <div class="merchImageBox">
+                    <image src="./resources/merch/jumper_denim.png" class="jumperIm" />
+                    <image src="./resources/merch/mug.png" class="jumperIm" />
+                    <image src="./resources/merch/jumper_white.png" class="jumperIm" />
+                </div>
+                <a class="merchTitle">We now have merch!</a>
+                <a class="merchDesc">Jumpers, Mugs, Wallscrolls and more!</a>
+                <div class="buyNow" id="buyNowButton">
+                    <a class="buyNowText" href="#" onmouseover="buttonHover2()" onmouseout="buttonUnhover2()">Take a Peek</a>
+                </div>
+            </div>
         </div>
-        <script src="./scripts/random.js"></script>
+        <script type="text/javascript" src="./scripts/random.js"></script>
     </body>
 </html>

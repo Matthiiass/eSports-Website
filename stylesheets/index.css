@@ -1,79 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;500&display=swap');
 
-body {
-    background-color: #18121f;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.headerBar {
-    width: 50%;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-}
-
-.headerLeft {
-    width: 25%;
-    display: flex;
-    justify-content: start;
-    padding-left: 3%;
-}
-
-.headerRight {
-    width: 75%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.iconImage {
-    height: 100%;
-    transform: rotate(35deg);
-}
-
-.headerButton {
-    width: 15%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding-bottom: 1%;
-}
-
-.headerButtonUnderline {
-    background-color: aliceblue;
-    width: 15%;
-    height: 3px;
-    border-radius: 25%;
-    transition: width 0.25s ease;
-}
-
-.headerText {
-    font-size: 1.3vw;
-    text-decoration: none;
-    color: aliceblue;
-    font-family: 'Kanit', sans-serif;
-    font-weight: 200;
-    text-align: center;
-}
-
-    .headerText:hover + .headerButtonUnderline {
-        width: 70%;
-    }
-
-    .headerText:hover {
-        transform: rotate(10deg)
-    }
 
 .weAre {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 3%;
+    padding-top: 2%;
     margin-bottom: 1%;
 }
 
@@ -96,6 +29,7 @@ body {
     width: 65%;
     height: 350px;
     object-fit: cover;
+    border-radius: 1rem;
 }
 
 .boxes {
@@ -165,4 +99,55 @@ body {
 
 .rightBox {
     width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+    .merchImageBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 5%;
+    }
+
+    .jumperIm {
+        width: 20%;
+    }
+
+    .merchTitle {
+        font-size: 1.7vw;
+        font-family: 'Kanit', sans-serif;
+        font-weight: 500;
+        text-align: center;
+        color: aliceblue;
+    }
+
+    .merchDesc {
+        font-size: 0.85vw;
+        font-family: 'Kanit', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        color: aliceblue;
+    }
+
+    .buyNow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-top: 2%;
+        background-color: #b8518e;
+        border-radius: 1rem;
+    }
+
+        .buyNowText {
+            font-size: 0.65vw;
+            font-family: 'Kanit', sans-serif;
+            font-weight: 300;
+            text-align: center;
+            color: aliceblue;
+            text-decoration: none;
+        }

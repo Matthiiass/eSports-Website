@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;500&display=swap');
+
+body {
+    background: linear-gradient(180deg, rgba(24,18,31,1) 0%, rgba(8,6,11,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerBar {
+    width: 50%;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    border-bottom-width: 1px;
+    border-bottom-color: aliceblue;
+    border-bottom-style: double;
+}
+
+.headerLeft {
+    width: 25%;
+    display: flex;
+    justify-content: start;
+    padding-left: 3%;
+    padding-bottom: 0.5%;
+}
+
+.headerRight {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 1%;
+}
+
+.iconImage {
+    height: 100%;
+    transform: rotate(35deg);
+}
+
+.headerButton {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 1%;
+}
+
+.headerButtonUnderline {
+    background-color: aliceblue;
+    width: 15%;
+    height: 3px;
+    border-radius: 25%;
+    transition: width 0.25s ease;
+}
+
+.headerText {
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+    .headerText:hover + .headerButtonUnderline {
+        width: 70%;
+    }
+
+    .headerText:hover {
+        transform: rotate(10deg)
+    }
