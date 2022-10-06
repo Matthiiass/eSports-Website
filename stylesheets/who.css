@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;500&display=swap');
 
+.alignBox {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+
 .whoweAre {
-    width: 40%;
-    height: 23rem;
+    width: 30%;
+    height: 29rem;
     border-radius: 2rem;
     margin-top: 2%;
     background-image: url("../resources/inklingsInSquare.jpg");
@@ -29,4 +38,95 @@
     font-size: 1vw;
     text-align: center;
     white-space: pre-line;
+}
+
+.circles {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cirLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+.profileCircle {
+    width: 10rem;
+    height: 10rem;
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.5s ease 0s, width 0.5s ease 0s;
+}
+
+.profileCircle:hover {
+    width: 12rem;
+    height: 12rem;
+}
+
+.profileImage {
+    height: 90%;
+    border-radius: 50%;
+}
+
+.playerImageBack {
+    height: 90%;
+    width: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+#matt {
+    background-image: url("../resources/player_pfp/matt.png");
+}
+
+#jim {
+    background-image: url("../resources/player_pfp/jim.png");
+}
+
+#ellen {
+    background-image: url("../resources/player_pfp/ellen.png");
+}
+
+#max {
+    background-image: url("../resources/player_pfp/max.png");
+}
+
+#bruhman {
+    background-image: url("../resources/player_pfp/bruhman.png");
+}
+
+#george {
+    background-image: url("../resources/player_pfp/george.png");
+}
+
+#center {
+    height: 90%;
+    transform: rotate(35deg);
+}
+
+.playerText {
+    color: aliceblue;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 2rem;
+}
+
+.disableALine {
+    text-decoration: none;
 }
