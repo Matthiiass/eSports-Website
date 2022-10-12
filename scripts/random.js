@@ -13,3 +13,17 @@ function buttonHover2() {
 function buttonUnhover2() {
     document.getElementById('buyNowButton').style.backgroundColor = '#b8518e'
 };
+
+function getUrlParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+};

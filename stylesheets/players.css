@@ -1,0 +1,78 @@
+.alignBox {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5%;
+}
+
+.userProfile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.playerOutline {
+    height: 11rem;
+    width: 11rem;
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playerIcon {
+    height: 97%;
+    width: 97%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.nameTitle {
+    margin-left: 1%;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+}
+
+#maki_pfp {
+    background-image: url('../resources/player_pfp/matt.png');
+}
+
+#soluri_pfp {
+    background-image: url('../resources/player_pfp/jim.png');
+}
+
+#forgor_pfp {
+    background-image: url('../resources/player_pfp/ellen.png');
+}
+
+#maxyMoo_pfp {
+    background-image: url('../resources/player_pfp/max.png');
+}
+
+#bruhman_pfp {
+    background-image: url('../resources/player_pfp/bruhman.png');
+}
+
+#woffle_pfp {
+    background-image: url('../resources/player_pfp/george.png');
+}
+
+#playerUsername {
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+#playerRealname {
+    font-size: 1.2vw;
+}
+
+#playerTitle {
+    font-size: 1vw;
+}
